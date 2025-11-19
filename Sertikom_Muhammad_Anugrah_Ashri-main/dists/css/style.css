@@ -1,0 +1,140 @@
+:root {
+    --Primary1: #1B3C53;
+    --Secondary: #1B3C53;
+    --Text: 	#D2C1B6;
+}
+
+html {
+    scroll-padding: 60px;
+}
+
+#navbar {
+    background-color: var(--Primary1);
+    transition: 0.3s ease;
+}
+
+.hero {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar a:hover {
+    color: 	var(--Text);
+}
+
+.hero h2, h4 {
+    color: var(--Primary1);
+    font-weight: bold;
+}
+
+.hero h1{
+    color: var(--Primary1);
+    font-weight: bold;
+}
+.hero p {
+    color: var(--Secondary);
+}
+
+#btnHero {
+    background-color: var(--Text);
+    transition: 0.3s ease;
+}
+
+.proofing h3 {
+    color: var(--Primary1);
+    font-weight: bold;
+}
+
+#btnHero:hover {
+    border: 1px solid;
+    border-color: var(--Primary1);
+}
+
+.tentang {
+    background-color: var(--Primary1);
+    padding: 20px;
+}
+.reviews h2 {
+    color: var(--Primary1);
+    font-weight: bold;
+}
+
+.reviews p {
+    color: var(--Secondary);
+}
+.tentang {
+    /* fixed typo: use the defined CSS variable for primary color */
+    background-color: var(--Primary1);
+}
+.tentang h2 {
+    color: white;
+    font-weight: bold;
+}
+{
+    text-decoration: none;
+    border: none;
+}
+
+.btn {
+    background-color: var(--Text);
+}
+
+.btn:hover {
+    border: 1px solid;
+    border-color: var(--Primary1);
+    background-color: var(--Text);
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.tentang p {
+    color: white;
+}
+
+.reviews h6 {
+    color: var(--Text);
+}
+
+#layanan {
+    border-color: #1B3C53;
+}
+
+.footer img {
+    padding: 5px;
+    border-radius: 5px;
+    width: 50px;
+    background-color: white;
+}
+
+.footer {
+    background-color: var(--Primary1);
+    color: white;
+}
+
+@media screen and (min-width:350px) and (max-width:1200px) {
+    .hero {
+        width: 100%;
+        height: auto; 
+        padding: 3rem 0; 
+    }
+
+    .hero img {
+        margin-top: 2rem;
+    }
+
+    .tentang {
+        margin-top: 3rem;
+    }
+}
