@@ -14,9 +14,9 @@ html {
 }
 
 #navbar {
-    background-color: var(--Primary1);
-    transition: 0.3s ease;
+background: linear-gradient(135deg, #1B3C53, #3a7ca5);
 }
+
 
 .hero {
     background-image: linear-gradient(rgba(1, 1, 1,0.8)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -27,7 +27,7 @@ html {
     min-height: 70vh;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 85vh;
 }
 
 #navbar a:hover {
@@ -52,9 +52,6 @@ html {
 .tentang {
     background-color: var(--Primary1);
     padding: 30px;
-}
-.services img {
-    border-radius: 5px;
 }
 
 .poppins-regular {
@@ -85,7 +82,6 @@ html {
 
 .card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
     transition: 0.3s ease;
 }
 
@@ -113,13 +109,62 @@ html {
 }
 
 .footer {
-    background-color: var(--Primary1);
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
     color: white;
+}
+
+.hero a {
+    text-decoration: none;
+    color: black;
+}
+
+.paket ul li {
+    list-style: none;
+margin-left: -30px;
+margin-top: 10px;
+
+}
+#paketbtn {
+    background-color: var(--Text);
+    color: white;
+    border: 1px solid white; 
+}
+
+.proofing p {
+    font-size: small;
+}
+
+#website {
+    background-color: var(--Text);
+    color: white;
+    border: 1px solid white;
+    margin-top: auto;
+}
+
+#website:hover {
+    background-color: #C8AFA2;
+    color: white;
+    border: 1px solid white; 
+    transition: 0.3s ease;
+}
+
+#paketbtn:hover {
+    background-color: #C8AFA2;
+    color: white;
+    border: 1px solid white; 
+    transition: 0.3s ease;
+}
+
+.paket-card {
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+    height: 500px;
 }
 
 input[type="text"], input[type="email"]{
     border-left: 4px solid var(--Primary1);
 }
+
+
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     box-shadow: 0 0 0;
@@ -130,8 +175,15 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     font-size: 0.9rem;
     margin-top: 0.25rem;
 }
+
+#btnform:hover {
+    background-color: #2d5a7f;
+    transition: 0.3s ease;
+    border: 1px solid white;
+}
+
 #forumleft {
-    background-color: var(--Primary1);
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
     color: white;
     padding: 20px;
     border-radius: 10px 0px 0px 10px;
@@ -141,10 +193,91 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     list-style: none;
 }
 
+.gradient-card {
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+    width: 480px;
+    height: 250px;
+    color: white;
+}
+
+.image-card {
+    margin-left: 80px;
+        background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+    width: 770px;
+    height: 250px;
+}
+
+#layanan-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.paket a {
+    text-decoration: none;
+    color: white;
+}
+
+.layanan a {
+    color: white;
+}
+
+.layanan a:hover {
+    color: white;
+    border-color: white;
+    background-color: #C8AFA2;
+}
+
+.paket b {
+    color: var(--Text);
+}
+
 #forumright {
     padding: 20px;
     background-color: var(--Text);
     border-radius: 0px 10px 10px 0px;
+}
+
+#cardperusahaan {
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#website-media {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#website-media .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.layanan p {
+    margin-bottom: -2px;
+}
+
+.layanan-image-1 {
+    max-height: 400px;
+    height: 100%;
+}
+
+@media screen and (max-width: 1440px){
+
+    .gradient-card {
+        width: 400px;
+        height: 300px;
+        margin-left: 7px;
+    }
+    .image-card {
+        margin-left: 50px;
+        width: 700px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width:350px) and (max-width:1200px) {
@@ -154,11 +287,72 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
         padding: 4rem 0; 
     }
 
+    .navbar-collapse {
+    text-align: center;
+    }
+    
+    .navbar-nav {
+    flex-direction: row;
+    justify-content: center;       
+    width: 100%;
+    gap: 1rem;
+    }
+
     .hero img {
         margin-top: 2rem;
     }
 
     .tentang {
         margin-top: 3rem;
+    }
+
+    .gradient-card {
+        width: 350px;
+        height: 300px;
+        margin-left: 7px;
+    }
+    .image-card {
+        margin-top: 20px;
+        margin-left: 7px;
+        width: 350px;
+        height: 420px;
+    }
+
+    #paketmedia {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+
+    #website-media{
+        margin-top: 20px;
+    }
+
+    #layanan-image {
+        width: 300px;
+    }
+
+    .layanan a {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #layanan-image-1 {
+        margin-top: 20px;
+    }
+
+    #forumleft {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .konsultasi {
+        margin: 20px;
+    }
+
+    #forumright {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
     }
 }
