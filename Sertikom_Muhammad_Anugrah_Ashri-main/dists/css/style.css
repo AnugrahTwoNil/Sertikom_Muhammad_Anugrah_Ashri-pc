@@ -9,14 +9,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-html {
-    scroll-padding: 60px;
-}
-
 #navbar {
-background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+background: linear-gradient(135deg, #102366, #3a7ca5);
 }
-
 
 .hero {
     background-image: linear-gradient(rgba(1, 1, 1,0.8)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -27,26 +22,32 @@ background: linear-gradient(135deg, #1B3C53, #3a7ca5);
     min-height: 70vh;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 88vh;
+}
+
+.hero h5 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: medium;
 }
 
 #navbar a:hover {
-    color: 	var(--Text);
+    color: 	#34D18A;
 }
 
 #navbar i:hover {
-    color: 	var(--Text);
+    color: 	#34D18A;
 }
 
 
 #btnHero {
-    background-color: var(--Text);
+    background-color: #4BF3A1;;
     transition: 0.3s ease;
 }
 
 #btnHero:hover {
     border: 1px solid;
-    border-color: var(--Primary1);
+    border-color: #34D18A;
 }
 
 .tentang {
@@ -66,13 +67,13 @@ background: linear-gradient(135deg, #1B3C53, #3a7ca5);
     font-weight: bold;
 }
 .btn {
-    background-color: var(--Text);
+    background-color: #4BF3A1;
 }
 
 .btn:hover {
     border: 1px solid;
     border-color: var(--Primary1);
-    background-color: var(--Text);
+    background-color: #34D18A;
 }
 
 .card {
@@ -92,14 +93,18 @@ background: linear-gradient(135deg, #1B3C53, #3a7ca5);
 .reviews h6 {
     color: var(--Text);
 }
-#btnform {
-    background-color: var(--Primary1);
-    color: white;
+
+.reviews {
+    margin-top: 100px;
 }
 
-#layanan {
-    border-color: #1B3C53;
+#btnform {
+    background-color: #4BF3A1;
+    color: black;
+    border: 1px solid var(--Primary1);
 }
+
+
 
 .footer img {
     padding: 5px;
@@ -118,6 +123,10 @@ background: linear-gradient(135deg, #1B3C53, #3a7ca5);
     color: black;
 }
 
+.paket {
+    margin-top: 100px;
+}
+
 .paket ul li {
     list-style: none;
 margin-left: -30px;
@@ -125,38 +134,42 @@ margin-top: 10px;
 
 }
 #paketbtn {
-    background-color: var(--Text);
+    background-color: #4BF3A1;
     color: white;
-    border: 1px solid white; 
+    border: 1px solid var(--Primary1); 
 }
 
 .proofing p {
     font-size: small;
 }
 
+.proofing {
+    margin-top: 100px;
+}
+
 #website {
-    background-color: var(--Text);
-    color: white;
-    border: 1px solid white;
+    background-color: #4BF3A1;
+    color: black;
+    border: 1px solid var(--Primary1);
     margin-top: auto;
 }
 
 #website:hover {
-    background-color: #C8AFA2;
-    color: white;
+    background-color: #34D18A;
+    color: black;
     border: 1px solid white; 
     transition: 0.3s ease;
 }
 
 #paketbtn:hover {
-    background-color: #C8AFA2;
-    color: white;
+    background-color: #34D18A;
+    color: black;
     border: 1px solid white; 
     transition: 0.3s ease;
 }
 
 .paket-card {
-    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+    background-color: white;
     height: 500px;
 }
 
@@ -177,9 +190,9 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 
 #btnform:hover {
-    background-color: #2d5a7f;
+    background-color: #34D18A;
     transition: 0.3s ease;
-    border: 1px solid white;
+    border: 1px solid #E3E3E3;
 }
 
 #forumleft {
@@ -215,55 +228,84 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 .paket a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .layanan a {
-    color: white;
+    border: 1px solid var(--Primary1);
+    background-color: #4BF3A1;
+    color: black;
 }
 
 .layanan a:hover {
-    color: white;
+    color: black;
     border-color: white;
-    background-color: #C8AFA2;
+    background-color: #34D18A;
 }
 
 .paket b {
-    color: var(--Text);
+    color: var(--Primary1);
 }
 
 #forumright {
     padding: 20px;
-    background-color: var(--Text);
+    background-color: #E3E3E3;
     border-radius: 0px 10px 10px 0px;
 }
 
 #cardperusahaan {
-    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
 #website-media {
-    display: flex;
-    flex-direction: column;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     height: 100%;
+    border: 2px solid var(--Primary1);
 }
 
 #website-media .card-img-top {
     height: 200px;
-    object-fit: cover;
+    object-fit: cover;  
 }
 
 .layanan p {
     margin-bottom: -2px;
+    line-height: 2;
+}
+
+.layanan {
+    margin-top: 100px;
 }
 
 .layanan-image-1 {
     max-height: 400px;
     height: 100%;
+}
+
+#layanan-row1 {
+    margin-top: 50px;
+}
+
+#layanan-row {
+    margin-top: 100px;
+}
+
+#service {
+    margin-top: 100px;
+}
+
+.reviews img {
+    width: 100%;
+    max-height: 50px;
+    max-width: 100px;
+}
+
+#paketmedia {
+    border: 2px solid var(--Primary1);
 }
 
 @media screen and (max-width: 1440px){
@@ -278,9 +320,16 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
         width: 700px;
         height: 300px;
     }
+    #paketmedia {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:350px) and (max-width:1200px) {
+    .layanan h3 {
+        margin-top: 20px;
+    }
+
     .hero {
         width: 100%;
         height: auto; 
@@ -355,4 +404,56 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
     }
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: #34D18A      ;
+}
+
+/* MARQUEE */
+
+.marquee-text {
+    overflow: hidden;
+    --fade: 120px;
+    mask-image: linear-gradient(to right,
+        transparent 0,
+        black var(--fade),
+        black calc(100% - var(--fade)),
+        transparent 100%);
+}
+
+.marquee-text-track {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    animation: marquee-move-text 20s linear infinite;
+    width: max-content;
+}
+
+.marquee-wrap {
+    margin-top: 100px;
+    background: linear-gradient(135deg, #1B3C53, #3a7ca5);
+}
+
+.marquee-text img {
+    width: 100px;
+}
+
+.marquee-text h1 {
+    color: white;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.marquee-text-track:hover { 
+    animation-play-state: paused; 
+    cursor: default;
+}
+
+@keyframes marquee-move-text {
+    to { transform: translateX(-50%); }
 }

@@ -19,13 +19,15 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- icon -->
+    <link rel="shortcut icon" href="asset/img/LogoVisiAlt1.webp" type="image/x-icon">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
     <div class="container" >
-        <img src="asset/img/logo.jpg" alt="Logo VisiDigital" width="50px">
+        <img src="asset/img/image-removebg-preview.png" alt="Logo VisiDigital" width="50px">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,10 +38,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">Tentang Kami</a>
+                    <a class="nav-link active" aria-current="page" href="#layanan">Layanan Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#service">Hubungi Kami</a>
+                    <a class="nav-link active" aria-current="page" href="#klien">Klien Sebelumnya</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#paket">Paket Tersedia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#service">Konsultasi</a>
                 </li>
             </ul>
 
@@ -55,12 +63,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="fw-bold text-center text-light">Solusi Digital yang Mengubah Bisnis Anda</h2>
+                <h1 class="fw-bold text-center text-light">Solusi Digital yang Mengubah Bisnis Anda</h1>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p class="text-light text-center">Layanan desain, branding, dan digital marketing untuk membantu bisnis Anda tumbuh lebih cepat.</p>
+                <h5 class="text-center text-light">Layanan desain, branding, dan digital marketing untuk membantu bisnis Anda tumbuh lebih cepat.</h5>
             </div>
         </div>
         <div class="row">
@@ -78,7 +86,7 @@
     <div class="container">
         <div class="row mt-5">
                 <div class="col-md-6 col-lg-4 col-4">
-                    <div class="card text-bg-dark gradient-card">
+                    <div class="card gradient-card">
                         <div class="card-img-overlay">
                             <h5 class="card-title position-absolute bottom-0 start-0 m-3">- VisiDigital</h5>
                             <h2 class="card-text fw-bold">Visi Kami</h2>
@@ -101,15 +109,15 @@
 <!-- ABOUT US -->
 
 <!-- SERVICES -->
-<div class="layanan">
+<div class="layanan" id="layanan">
     <div class="container">
         <div class="row">
             <div class="col">
                 <p class="text-center text-secondary mt-5">Apa yang Kami Tawarkan</p>
-                <h2 class="text-center fw-bold border-bottom mb-5">Layanan kami</h2>
+                <h2 class="text-center fw-bold border-bottom">Layanan kami</h2>
             </div>
         </div>
-        <div class="row align-items-center mb-5">
+        <div class="row align-items-center" id="layanan-row1">
             <div class="col-md-6 d-flex justify-content-center">
                 <img src="asset/img/undraw_loading-ui_egb4.svg" alt="" id="layanan-image" class="img-fluid">
             </div>
@@ -120,14 +128,14 @@
                     menciptakan website profesional yang mampu meningkatkan kredibilitas, memperkuat brand, dan
                     memudahkan pelanggan menemukan informasi yang mereka butuhkan.</p>
                 <ul>
-                    <li class="text-secondary mt-5">Desain responsif yang cocok untuk semua perangkat.</li>
+                    <li class="text-secondary mt-3">Desain responsif yang cocok untuk semua perangkat.</li>
                     <li class="text-secondary mt-3">Tampilan modern dan mudah dinavigasi.</li>
                     <li class="text-secondary mt-3">Dibangun dengan standar dan praktik terbaik industri.</li>
                 </ul>
-                <a href="" class="btn mt-4">Penjelasan</a>
+                <a href="" class="btn mt-3">Penjelasan</a>
             </div>
         </div>
-        <div class="row mb-5">
+        <div class="row" id="layanan-row">
             <div class="col-sm-6">
                 <h3 class="fw-bold">Mobile Development</h3>
                 <p class="text-secondary">VisiDigital memberikan layanan mobile development yang berfokus pada pembuatan
@@ -135,18 +143,18 @@
                     mobile yang modern agar pelanggan dapat mengakses layanan kapan saja dan di mana saja dengan lebih
                     praktis.</p>
                 <ul>
-                    <li class="text-secondary mt-5">Pengembangan aplikasi Android dan iOS.</li>
+                    <li class="text-secondary mt-3">Pengembangan aplikasi Android dan iOS.</li>
                     <li class="text-secondary mt-3">Desain antarmuka yang simple, modern, dan ramah pengguna.</li>
                     <li class="text-secondary mt-3">Performa stabil dan dioptimalkan untuk kebutuhan bisnis.</li>
                 </ul>
-                <a href="" class="btn mt-5">Penjelasan</a>
+                <a href="" class="btn mt-3">Penjelasan</a>
             </div>
             <div class="col-sm-6 d-flex justify-content-center">
                 <img src="asset/img/undraw_home-screen_3tkn.svg" alt="" height="400px" id="layanan-image-1">
             </div>
         </div>
-        <div class="row" id="layanan-1-2">
-            <div class="col-md-6 d-flex justify-content-center ">
+        <div class="row" id="layanan-row">
+            <div class="col-md-6 d-flex justify-content-center " id="layanan-1-2">
                 <img src="asset/img/undraw_landing_rd2s.svg" alt="" id="layanan-image" class="img-fluid">
             </div>
             <div class="col-md-6">
@@ -156,116 +164,51 @@
                     berstandar industri, kami memastikan website Anda memiliki performa yang kuat, ramah mesin pencari,
                     dan mampu menarik lebih banyak pengunjung secara organik.</p>
                 <ul>
-                    <li class="text-secondary mt-5">Riset kata kunci yang relevan dan tepat sasaran.</li>
+                    <li class="text-secondary mt-3">Riset kata kunci yang relevan dan tepat sasaran.</li>
                     <li class="text-secondary mt-3">Optimasi konten serta struktur website.</li>
                     <li class="text-secondary mt-3">Analisis performa dan peningkatan berkelanjutan.</li>
                 </ul>
-                <a href="" class="btn mt-5">Penjelasan</a>
+                <a href="" class="btn mt-3">Penjelasan</a>
             </div>
         </div>
     </div>
 </div>
 <!-- SERVICES -->
-<!-- REVIEWS -->
-<div class="reviews">
-    <div data-aos="fade-up">
-        <div class="container mt-5">
-            <div class="row"> 
-                <div class="col border-bottom text-center">
-                    <h2 class="fw-bold">Ulasan</h2>
-                </div>
-                <div class="row"></div>
-                <div class="col mt-4">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper mb-5">
-                            <div class="swiper-slide">
-                                <div class="card" style="width: 19rem;">
-                                    <div class="card-body">
-                                        <p class="card-text">Tim VisiDigital memberikan strategi digital yang jelas dan
-                                            mudah dipahami.
-                                            Setelah kerja sama, trafik website kami meningkat secara signifikan.</p>
-                                        <h6 class="card-subtitle">- Klien</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card" style="width: 19rem;">
-                                    <div class="card-body">
-                                        <p class="card-text">VisiDigital membantu bisnis kami terlihat lebih profesional
-                                            di dunia
-                                            digital.
-                                            Layanan mereka cepat, ramah, dan hasilnya benar-benar memuaskan.</p>
-                                        <h6 class="card-subtitle">- Klien</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <p class="card-text">Pelayanan VisiDigital selalu cepat dan membantu. Mereka memberikan arahan
-                            yang jelas, sehingga kehadiran digital bisnis meningkat secara konsisten.</p>
-                        <h6 class="card-subtitle">- Klien</h6>
-                    </div>
-                </div>
-                            </div>
-                            <div class="swiper-slide">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <p class="card-text">Brand VisiDigital kami tampil lebih profesional dan menarik di dunia
-                            digital. Prosesnya mudah dan hasil akhirnya sangat memuaskan.</p>
-                        <h6 class="card-subtitle">- Klien</h6>
-                    </div>
-                </div>
-                            </div>
-                            <div class="swiper-slide">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <p class="card-text">VisiDigital memberi strategi yang jelas dan efektif. Setelah mengikuti arahan mereka, performa digital kami meningkat signifikan.</p>
-                        <h6 class="card-subtitle">- Klien</h6>
-                    </div>
-                </div>
-                            </div>
-                            <div class="swiper-slide">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <p class="card-text">Proses bersama VisiDigital mudah dan hasilnya nyata. Brand kami tampil lebih profesional dan menarik di dunia digital.</p>
-                        <h6 class="card-subtitle">- Klien</h6>
-                    </div>
-                </div>
-                            </div>
-                            <div class="swiper-slide">
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <p class="card-text">Tim VisiDigital selalu responsif dan membantu. Arahan mereka membuat kehadiran digital kami tumbuh konsisten dan profesional.</p>
-                        <h6 class="card-subtitle">- Klien</h6>
-                    </div>
-                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+    <div class="marquee-text">
+        <div class="marquee-text-track">
+            <h1>Digital <img src="asset/img/star.png" alt=""></h1>
+            <h1>Visi <img src="asset/img/star.png" alt=""></h1>
+            <h1>Bisnis <img src="asset/img/star.png" alt=""></h1>
+            <h1>Kreatif <img src="asset/img/star.png" alt=""></h1>
+            <h1>Marketing <img src="asset/img/star.png" alt=""></h1>
+            <h1>Digital <img src="asset/img/star.png" alt=""></h1>
+            <h1>Visi <img src="asset/img/star.png" alt=""></h1>
+            <h1>Bisnis <img src="asset/img/star.png" alt=""></h1>
+            <h1>Kreatif <img src="asset/img/star.png" alt=""></h1>
+            <h1>Marketing <img src="asset/img/star.png" alt=""></h1>
         </div>
     </div>
 </div>
-<!-- REVIEWS -->
+<!-- MARQUEE -->
 
 <!-- PROOFING -->
-<div class="proofing">
+<div class="proofing" id="klien">
     <div class="container">
         <div class="row">
-            <div class="col mt-5 border-bottom">
+            <div class="col border-bottom">
                 <h3 class="text-center fw-bold">Sudah Teruji Oleh</h3>
             </div>
         </div>
-        <div class="row mt-3 mb-5 g-4">
+        <div class="row mt-5 mb-5 g-4">
             <div class="col-sm-6 col-lg-3">
                 <div class="card" id="website-media">
                     <img src="https://marketplace.canva.com/EAFmXlLv4dw/1/0/1600w/canva-hitam-dan-putih-bold-bisnis-teknologi-logo-ABL7sKNBjwE.jpg" class="card-img-top" alt="Keith">
                     <div class="card-body" id="cardperusahaan">
-                        <h5 class="card-title text-light">Solusi Digital Modern</h5>
-                        <p class="card-text text-light">Kami membantu Keithsto mengembangkan identitas digital yang kuat melalui desain modern dan professional dengan strategi pemasaran yang terukur.</p>
+                        <h5 class="card-title">Solusi Digital Modern</h5>
+                        <p class="card-text text-secondary">Kami membantu Keithsto mengembangkan identitas digital yang kuat melalui desain modern dan professional dengan strategi pemasaran yang terukur.</p>
                         <a href="#" class="btn" id="website">Kunjungi Website</a>
                     </div>
                 </div>
@@ -274,18 +217,18 @@
                 <div class="card" id="website-media">
                     <img src="https://marketplace.canva.com/EAE_oLhwiyI/1/0/1600w/canva-logo-teknologi-%26-gaming-biru-wQf6JZ13OWQ.jpg" class="card-img-top" alt="Tekno">
                     <div class="card-body" id="cardperusahaan">
-                        <h5 class="card-title text-light">Transformasi Teknologi</h5>
-                        <p class="card-text text-light">Tekno Utama bekerja sama dengan VisiDigital untuk membangun platform digital yang aman, cepat, dan mudah digunakan oleh semua pelanggan mereka.</p>
+                        <h5 class="card-title">Transformasi Teknologi</h5>
+                        <p class="card-text text-secondary">Tekno Utama bekerja sama dengan VisiDigital untuk membangun platform digital yang aman, cepat, dan mudah digunakan oleh semua pelanggan mereka.</p>
                         <a href="#" class="btn" id="website">Kunjungi Website</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
                 <div class="card" id="website-media">
-                    <img src="https://marketplace.canva.com/EADj1GmtffI/2/0/1600w/canva-abu-abu-gaya-industri-logo-H6NwTGRZEhg.jpg" class="card-img-top" alt="Teknika">
+                    <img src="asset/img/lokajaya.png" class="card-img-top" alt="Teknika">
                     <div class="card-body" id="cardperusahaan">
-                        <h5 class="card-title text-light">Inovasi Industri</h5>
-                        <p class="card-text text-light">PT. Lokajaya Teknika mempercayakan VisiDigital dalam pembuatan profil perusahaan serta optimalisasi branding untuk memperkuat citra profesional mereka.</p>
+                        <h5 class="card-title">Inovasi Industri</h5>
+                        <p class="card-text text-secondary">PT. Lokajaya Teknika mempercayakan VisiDigital dalam pembuatan profil perusahaan serta optimalisasi branding untuk memperkuat citra profesional mereka.</p>
                         <a href="#" class="btn" id="website">Kunjungi Website</a>
                     </div>
                 </div>
@@ -294,8 +237,8 @@
                 <div class="card" id="website-media">
                     <img src="https://s3u.tmimgcdn.com/800x0/u2388748/e59eccad944c6c924eb1787564b98bf6.jpg" class="card-img-top" alt="Digital">
                     <div class="card-body" id="cardperusahaan">
-                        <h5 class="card-title text-light">Pemasaran Digital</h5>
-                        <p class="card-text text-light">VisiDigital membantu klien ini meningkatkan jangkauan online melalui kampanye pemasaran digital melalui internet yang terarah, teratur dan berbasis data.</p>
+                        <h5 class="card-title">Pemasaran Digital</h5>
+                        <p class="card-text text-secondary">VisiDigital membantu klien ini meningkatkan jangkauan online melalui kampanye pemasaran digital melalui internet yang terarah, teratur dan berbasis data.</p>
                         <a href="#" class="btn" id="website">Kunjungi Website</a>
                     </div>
                 </div>
@@ -306,33 +249,33 @@
 <!-- PROOFING -->
 
 <!-- PAKET -->
-<div class="paket">
+<div class="paket" id="paket">
     <div class="container">
         <div class="row">
             <div class="col">
                 <h2 class="fw-bold text-center border-bottom mb-4">Pilih Dari Aneka Paket Kami</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4" id="paketmedia">
-                <div class="card text-bg-dark paket-card">
+        <div class="row mt-5">
+            <div class="col-md-4 col-lg-4">
+                <div class="card paket-card" id="paketmedia">
                     <div class="card-img-overlay">
-                        <button type="button" class="card-title position-absolute bottom-0 start-0 m-3 btn" id="paketbtn"><a href="#service" >Konsultasi Gratis</a></button>
+                        <button type="button" class="card-title position-absolute bottom-0 start-0 m-3 btn" id="paketbtn"><a href="#service">Konsultasi Gratis</a></button>
                         <h2 class="card-text">Paket <b> Gratis </b></h2>
                         <p class="border-bottom">Memenuhi Forum untuk Konsultasi Gratis.</p>
                         <h2 class="card-text mt-3">Gratis.</h2>
                         <ul>
-                            <li><i class="fa-solid fa-check"></i> Akses ke forum komunitas VisiDigital</li>
-                            <li><i class="fa-solid fa-check"></i> Tanya jawab dasar seputar digital branding</li>
+                            <li><i class="fa-solid fa-check"></i> Akses forum komunitas VisiDigital</li>
+                            <li><i class="fa-solid fa-check"></i> Tanya jawab digital branding</li>
                             <li><i class="fa-solid fa-check"></i> Update informasi & tips mingguan</li>
-                            <li><i class="fa-solid fa-check"></i> Dukungan via email (respon 2–3 hari)</li>
+                            <li><i class="fa-solid fa-check"></i> Dukungan via email</li>
                             <li><i class="fa-solid fa-check"></i> Akses materi dasar</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4" id="paketmedia">
-                <div class="card text-bg-dark paket-card">
+            <div class="col-md-4 col-lg-4">
+                <div class="card paket-card" id="paketmedia">
                     <div class="card-img-overlay">
                         <button type="button" class="card-title position-absolute bottom-0 start-0 m-3 btn" id="paketbtn"><a href=""> Pilih Paket </a></button>
                         <h2 class="card-text">Paket <b> Biasa</b></h2>
@@ -341,16 +284,16 @@
                         <ul>
                             <li><i class="fa-solid fa-check"></i> Semua fitur dari Paket Gratis</li>
                             <li><i class="fa-solid fa-check"></i> Konsultasi via chat 1x per minggu</li>
-                            <li><i class="fa-solid fa-check"></i> Review desain sederhana (logo/banner)</li>
-                            <li><i class="fa-solid fa-check"></i> Saran strategi konten media sosial</li>
+                            <li><i class="fa-solid fa-check"></i> Review desain sederhana</li>
+                            <li><i class="fa-solid fa-check"></i> Strategi konten media sosial</li>
                             <li><i class="fa-solid fa-check"></i> Template desain siap pakai</li>
                             <li><i class="fa-solid fa-check"></i> Prioritas dukungan level 1</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4" id="paketmedia">
-                <div class="card text-bg-dark paket-card">
+            <div class="col-md-4 col-lg-4">
+                <div class="card paket-card" id="paketmedia">
                     <div class="card-img-overlay">
                         <button type="button" class="card-title position-absolute bottom-0 start-0 m-3 btn" id="paketbtn"><a href=""> Pilih Paket </a></button>
                         <h2 class="card-text">Paket <b>Pro </b></h2>
@@ -373,17 +316,15 @@
 </div>
 <!-- PAKET -->
 
-
-
 <!-- KONSULTASI -->
 <div class="konsultasi" id="service">
     <div class="container">
         <div class="row">
-            <div class="col text-center mt-5">
-                <h4 class="fw-bold border-bottom mb-4">Konsultasi Gratis</h4>
+            <div class="col text-center">
+                <h4 class="fw-bold border-bottom">Konsultasi Gratis</h4>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-lg-4" id="forumleft">
                 <h5 class="text-center fw-bold">Butuh Bantuan Ahli?</h5>
                 <p>Dapatkan saran profesional secara cepat dan gratis.
@@ -427,14 +368,13 @@
 <!-- KONSULTASI -->
 
 <!-- FOOTER -->
-<div class="footer mt-5">
+<div class="footer">
     <div class="container">
-        <div class="text-start row">
-            <div class="col-lg-6 mt-5">
+        <div class="text-start row mt-5">
+            <div class="col-lg-4 mt-5">
                 <h2 class="border-bottom">VisiDigital</i></h2>
-                <p>VisiDigital adalah mitra digital Anda dalam membangun kehadiran online yang kuat dan terpercaya.
-                    Kami menghadirkan solusi modern mulai dari pengembangan identitas digital, strategi pemasaran
-                    berbasis data, hingga optimasi brand di berbagai platform.</p>
+                <p>Solusi Digital yang Mengubah Bisnis Anda.</p>
+                <h4><a href=""> <i class="fa-brands fa-square-whatsapp"></a></i> <a href=""> <i class="fa-brands fa-square-facebook"></i></a> <a href=""> <i class="fa-brands fa-square-linkedin"></i> </a></h4>
             </div>
             <div class="col-lg-3 mt-5">
                 <h2 class="border-bottom">Payment Partners</h2>
@@ -459,11 +399,19 @@
                 <img src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736481433494-cc499bb95280d6f6ca53d85118c995ef.webp?tr=dpr-2,h-19,q-75,w-57"
                     alt="ATM">
             </div>
-            <div class="col-lg-3 mt-5">
+            <div class="col-lg-2 mt-5">
                 <h2 class="border-bottom">Contact Us</h2>
                 <p><i class="fa-solid fa-at"></i> VisiDigital@gmail.com </p>
                 <p><i class="fa-solid fa-phone"></i>+64 1234 5678 901</p>
                 <p><i class="fa-brands fa-telegram"></i> @VisiDigital(Telegram)</p>
+            </div>
+            <div class="col mt-5">
+                <h2 class="border-bottom ">Legal</h2>
+                <ul>
+                    <li class="mt-3"><a href="">Terms & Conditions</a></li>
+                    <li class="mt-3"><a href="">Privacy Policy</a></li>
+                    <li class="mt-3"><a href="">Press Release</a></li>
+                </ul>
             </div>
         </div>
         <div class="row border-top mt-4">
